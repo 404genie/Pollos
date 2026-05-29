@@ -33,7 +33,7 @@ export default function Navbar() {
           target="_blank"
           className="hidden rounded-xl bg-yellow-500 px-5 py-2 font-bold text-black transition hover:scale-105 md:block"
         >
-          View on OpenSea
+          View on OpenSea(TBA)
         </a>
 
         <button
