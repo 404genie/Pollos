@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+:root {
+  --background: #120303;
+  --foreground: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #120303;
+  color: white;
+  font-family: var(--font-inter);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-bebas);
+  letter-spacing: 2px;
+}
+
+.texture-bg {
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+}
+
+* {
+  cursor: none;
+}
+
+.pollos-cursor {
+  pointer-events: none;
+  position: fixed;
+  z-index: 9999;
+  height: 18px;
+  width: 18px;
+  border-radius: 9999px;
+  background: #eab308;
+  box-shadow: 0 0 25px rgba(234, 179, 8, 0.9);
+  transform: translate(-50%, -50%);
+}
