@@ -29,7 +29,7 @@ export default function Navbar() {
         </nav>
 
         <a
-          href="https://opensea.io"
+        
           target="_blank"
           className="hidden rounded-xl bg-yellow-500 px-5 py-2 font-bold text-black transition hover:scale-105 md:block"
         >
@@ -40,7 +40,7 @@ export default function Navbar() {
           onClick={() => setOpen(true)}
           className="text-yellow-100 md:hidden"
         >
-          <Menu size={30} />
+          <Menu size={10} />
         </button>
       </div>
 
