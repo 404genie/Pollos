@@ -82,7 +82,7 @@ export default function Navbar() {
           target="_blank"
           className="mt-4 rounded-xl bg-yellow-500 px-5 py-4 text-center font-black text-black"
         >
-          View on OpenSea
+          View on OpenSea(TBA)
         </a>
       </nav>
     </aside>
