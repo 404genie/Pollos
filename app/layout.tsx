@@ -18,6 +18,11 @@ export const metadata: Metadata = {
   description: "More than chickens. Personalities.",
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{

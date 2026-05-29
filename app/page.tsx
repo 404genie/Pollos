@@ -320,7 +320,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="bg-[#120303] py-6 text-center text-yellow-600">
+      <div id="faq" className="bg-[#120303] py-6 text-center text-yellow-600">
         ★ ★ ★
       </div>
       {/* FAQ */}
@@ -384,11 +384,11 @@ export default function Home() {
       </a>
 
       <a
-        href="https://opensea.io"
+      
         target="_blank"
         className="rounded-xl bg-yellow-500 px-8 py-4 font-black text-black transition hover:scale-105"
       >
-        View on OpenSea
+        View on OpenSea(TBA)
       </a>
     </div>
   </div>
@@ -404,7 +404,7 @@ export default function Home() {
       <FaXTwitter />
     </a>
 
-    <a href="https://opensea.io" target="_blank" className="hover:text-yellow-500">
+    <a target="_blank" className="hover:text-yellow-500">
       <SiOpensea />
     </a>
 
