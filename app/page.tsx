@@ -59,7 +59,7 @@ export default function Home() {
     },
     {
       title: "The Convict",
-      image: "/images/Convict.jpg",
+      image: "/images/convict.jpg",
       rarity: "Epic",
       lore: "A multiple times convict from the ancient roost",
       traits: ["mugshot", "Big eyes", "Brown skin", "Criminal Spirit"],
