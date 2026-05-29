@@ -45,35 +45,33 @@ export default function Navbar() {
       </div>
 
       {open && (
-  <>
-    {/* Backdrop */}
+  <div className="fixed inset-0 z-[9999] md:hidden">
     <div
-      className="fixed inset-0 z-40 bg-black/60"
+      className="absolute inset-0 bg-black/70"
       onClick={() => setOpen(false)}
     />
 
-    {/* Drawer */}
-    <div className="fixed right-0 top-0 z-50 h-full w-[280px] border-l border-yellow-900 bg-[#1a0505] shadow-2xl md:hidden">
-      <div className="flex items-center justify-between border-b border-yellow-900 p-5">
-        <h2 className="text-2xl font-black text-yellow-200">
+    <aside className="absolute right-0 top-0 h-full w-[300px] border-l border-yellow-800 bg-[#160404] shadow-2xl">
+      <div className="flex items-center justify-between border-b border-yellow-800 bg-[#160404] p-5">
+        <h2 className="text-2xl font-black tracking-widest text-yellow-200">
           POLLOS
         </h2>
 
         <button
           onClick={() => setOpen(false)}
-          className="text-yellow-100"
+          className="rounded-full bg-yellow-500 p-2 text-black"
         >
-          <X size={26} />
+          <X size={22} />
         </button>
       </div>
 
-      <nav className="flex flex-col p-4">
+      <nav className="flex flex-col gap-2 bg-[#160404] p-5">
         {links.map((link) => (
           <a
             key={link.name}
             href={link.href}
             onClick={() => setOpen(false)}
-            className="rounded-lg px-4 py-4 text-lg font-semibold text-yellow-100 transition hover:bg-[#2a0606]"
+            className="rounded-xl bg-[#2a0606] px-5 py-4 text-lg font-bold text-yellow-100"
           >
             {link.name}
           </a>
@@ -82,13 +80,13 @@ export default function Navbar() {
         <a
           href="https://opensea.io"
           target="_blank"
-          className="mt-4 rounded-xl bg-yellow-500 px-4 py-3 text-center font-bold text-black"
+          className="mt-4 rounded-xl bg-yellow-500 px-5 py-4 text-center font-black text-black"
         >
           View on OpenSea
         </a>
       </nav>
-    </div>
-  </>
+    </aside>
+  </div>
 )}
     </header>
   );
