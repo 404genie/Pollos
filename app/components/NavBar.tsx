@@ -40,33 +40,40 @@ export default function Navbar() {
           onClick={() => setOpen(true)}
           className="text-yellow-100 md:hidden"
         >
-          <Menu size={10} />
+          <Menu size={30} />
         </button>
       </div>
 
       {open && (
-  <div className="fixed inset-0 z-[9999] bg-black md:hidden">
-    <div className="flex h-full w-full flex-col bg-[#120303] px-8 py-8">
-      <div className="flex items-center justify-between border-b border-yellow-800 pb-6">
-        <h2 className="text-4xl font-black tracking-widest text-yellow-200">
+  <>
+    {/* Backdrop */}
+    <div
+      className="fixed inset-0 z-40 bg-black/60"
+      onClick={() => setOpen(false)}
+    />
+
+    {/* Drawer */}
+    <div className="fixed right-0 top-0 z-50 h-full w-[280px] border-l border-yellow-900 bg-[#1a0505] shadow-2xl md:hidden">
+      <div className="flex items-center justify-between border-b border-yellow-900 p-5">
+        <h2 className="text-2xl font-black text-yellow-200">
           POLLOS
         </h2>
 
         <button
           onClick={() => setOpen(false)}
-          className="rounded-full bg-yellow-500 p-2 text-black"
+          className="text-yellow-100"
         >
-          <X size={28} />
+          <X size={26} />
         </button>
       </div>
 
-      <nav className="mt-12 flex flex-col gap-6">
+      <nav className="flex flex-col p-4">
         {links.map((link) => (
           <a
             key={link.name}
             href={link.href}
             onClick={() => setOpen(false)}
-            className="rounded-xl border border-yellow-800 bg-[#2a0606] px-6 py-5 text-3xl font-black text-yellow-100"
+            className="rounded-lg px-4 py-4 text-lg font-semibold text-yellow-100 transition hover:bg-[#2a0606]"
           >
             {link.name}
           </a>
@@ -75,13 +82,13 @@ export default function Navbar() {
         <a
           href="https://opensea.io"
           target="_blank"
-          className="mt-4 rounded-xl bg-yellow-500 px-6 py-5 text-center text-3xl font-black text-black"
+          className="mt-4 rounded-xl bg-yellow-500 px-4 py-3 text-center font-bold text-black"
         >
           View on OpenSea
         </a>
       </nav>
     </div>
-  </div>
+  </>
 )}
     </header>
   );
