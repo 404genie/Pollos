@@ -78,7 +78,7 @@ export default function Navbar() {
         ))}
 
         <a
-          href="https://opensea.io"
+        
           target="_blank"
           className="mt-4 rounded-xl bg-yellow-500 px-5 py-4 text-center font-black text-black"
         >
