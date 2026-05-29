@@ -45,39 +45,44 @@ export default function Navbar() {
       </div>
 
       {open && (
-        <div className="fixed inset-0 z-50 bg-black/70 md:hidden">
-          <div className="ml-auto h-full w-[80%] max-w-sm bg-[#210707] p-6 shadow-2xl">
-            <div className="flex items-center justify-between">
-              <h2 className="text-3xl font-black text-yellow-200">POLLOS</h2>
+  <div className="fixed inset-0 z-[9999] bg-black md:hidden">
+    <div className="flex h-full w-full flex-col bg-[#120303] px-8 py-8">
+      <div className="flex items-center justify-between border-b border-yellow-800 pb-6">
+        <h2 className="text-4xl font-black tracking-widest text-yellow-200">
+          POLLOS
+        </h2>
 
-              <button onClick={() => setOpen(false)} className="text-yellow-100">
-                <X size={30} />
-              </button>
-            </div>
+        <button
+          onClick={() => setOpen(false)}
+          className="rounded-full bg-yellow-500 p-2 text-black"
+        >
+          <X size={28} />
+        </button>
+      </div>
 
-            <div className="mt-12 flex flex-col gap-6 text-2xl text-yellow-100">
-              {links.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  onClick={() => setOpen(false)}
-                  className="border-b border-yellow-900 pb-4"
-                >
-                  {link.name}
-                </a>
-              ))}
+      <nav className="mt-12 flex flex-col gap-6">
+        {links.map((link) => (
+          <a
+            key={link.name}
+            href={link.href}
+            onClick={() => setOpen(false)}
+            className="rounded-xl border border-yellow-800 bg-[#2a0606] px-6 py-5 text-3xl font-black text-yellow-100"
+          >
+            {link.name}
+          </a>
+        ))}
 
-              <a
-                href="https://opensea.io"
-                target="_blank"
-                className="mt-4 rounded-xl bg-yellow-500 px-5 py-4 text-center font-black text-black"
-              >
-                View on OpenSea
-              </a>
-            </div>
-          </div>
-        </div>
-      )}
+        <a
+          href="https://opensea.io"
+          target="_blank"
+          className="mt-4 rounded-xl bg-yellow-500 px-6 py-5 text-center text-3xl font-black text-black"
+        >
+          View on OpenSea
+        </a>
+      </nav>
+    </div>
+  </div>
+)}
     </header>
   );
 }
