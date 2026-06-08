@@ -104,11 +104,9 @@ export default function ApplyWhitelist() {
       <CursorGlow />
  
       {/* HERO */}
-      <div style={{ width:"100%", position:"relative", height:"260px", display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center", gap:"16px", overflow:"hidden" }}>
+      <div style={{ width:"100%", position:"relative", height:"260px", overflow:"hidden" }}>
         <img src={BG_IMAGE} alt="" aria-hidden="true" style={{ position:"absolute", inset:0, width:"100%", height:"100%", objectFit:"cover", objectPosition:"center top" }} />
         <div style={{ position:"absolute", inset:0, background:"linear-gradient(to bottom,rgba(6,2,1,.1) 0%,rgba(6,2,1,.72) 100%)" }} />
-        <img src={LOGO_IMAGE} alt="Pollos" style={{ position:"relative", height:"80px", width:"auto", objectFit:"contain", filter:"drop-shadow(0 3px 16px rgba(0,0,0,.8))" }} />
-        <h1 style={{ position:"relative", fontFamily:"'Playfair Display',serif", fontSize:"32px", fontWeight:700, color:"#fef5e4", letterSpacing:"1px", textShadow:"0 2px 12px rgba(0,0,0,.7)" }}>Whitelist Application</h1>
       </div>
  
       {/* BODY */}
