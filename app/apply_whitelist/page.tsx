@@ -105,7 +105,7 @@ export default function ApplyWhitelist() {
  
       {/* HERO */}
       <div style={{ width:"100%", position:"relative", height:"260px", overflow:"hidden" }}>
-        <img src={BG_IMAGE} alt="" aria-hidden="true" style={{ position:"absolute", inset:0, width:"100%", height:"100%", objectFit:"cover", objectPosition:"center top" }} />
+        <img src={BG_IMAGE} alt="" aria-hidden="true" style={{ position:"absolute", inset:0, width:"100%", height:"100%", objectFit:"contain", objectPosition:"center center" }} />
         <div style={{ position:"absolute", inset:0, background:"linear-gradient(to bottom,rgba(6,2,1,.1) 0%,rgba(6,2,1,.72) 100%)" }} />
       </div>
  
