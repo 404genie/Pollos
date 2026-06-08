@@ -96,7 +96,14 @@ const glowStyle = `
         ))}
 
         <a
-        
+          href="/apply_whitelist"
+          onClick={() => setOpen(false)}
+          className="mt-4 rounded-xl bg-gradient-to-r from-[#f0c040] to-[#c04010] px-5 py-4 text-center font-black text-black shadow-[0_0_12px_rgba(240,192,64,0.6),0_0_24px_rgba(240,192,64,0.3)]"
+        >
+          🐓 Secure Your Whitelist
+        </a>
+
+        <a
           target="_blank"
           className="mt-4 rounded-xl bg-yellow-500 px-5 py-4 text-center font-black text-black"
         >
